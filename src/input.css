@@ -33,3 +33,9 @@ transition: all 0.5s;
 .spec-container{
 padding-left:20px;padding-right:20px;margin-right:auto;margin-left:auto;width:100%;max-width:1230px;
 }
+@media screen and (max-width:500px) {
+    .spec-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

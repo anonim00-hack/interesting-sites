@@ -556,6 +556,10 @@ video {
   position: absolute;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -574,6 +578,10 @@ video {
 
 .top-2\.5 {
   top: 0.625rem;
+}
+
+.top-\[25\%\] {
+  top: 25%;
 }
 
 .my-3 {
@@ -729,6 +737,11 @@ video {
   padding-top: 4rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -739,29 +752,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-green-400 {
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 .d-none {
@@ -810,6 +808,13 @@ video {
   margin-left:auto;
   width:100%;
   max-width:1230px;
+}
+
+@media screen and (max-width:500px) {
+  .spec-container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -865,6 +870,10 @@ video {
     width: 0.125rem;
   }
 
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -883,11 +892,6 @@ video {
 
   .md\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-3xl {
