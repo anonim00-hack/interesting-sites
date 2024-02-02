@@ -2,40 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: url('https://sotni.ru/wp-content/uploads/2023/08/fonovoe-izobrazhenie-dlia-saita-1.webp');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .d-none {
-display:none;
+    display: none;
 }
+
 .top--100px {
-top:-900px;
+    top: -900px;
 }
+
 @media screen and (max-width:768px) {
-.brightness{
-backdrop-filter:brightness(0.5);
-width:100em;
-height:100em;
-z-index:1;
+    .brightness {
+        backdrop-filter: brightness(0.5);
+        width: 100em;
+        height: 100em;
+        z-index: 1;
+    }
 }
+
+.animation {
+    transition: all 0.4s;
+    display: inline-block;
+    color: blue;
 }
-.animation{
-transition:all 0.4s;display:inline-block;color:blue;
+
+.animation:hover {
+    color: red;
+    text-decoration: underline;
 }
-.animation:hover{
-color:red;text-decoration: underline;
+
+.bottom {
+    top: 0;
+    z-index: 3;
 }
-.bottom{
-top:0;
-z-index:3;
-}
+
 .links,
-.bright{
-transition: all 0.5s;
+.bright {
+    transition: all 0.5s;
 }
-.spec-container{
-padding-left:20px;padding-right:20px;margin-right:auto;margin-left:auto;width:100%;max-width:1230px;
+
+.spec-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1230px;
 }
+
 @media screen and (max-width:500px) {
-    .spec-container{
+    .spec-container {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .spec-container {
+        max-width: 600px !important;
     }
 }
