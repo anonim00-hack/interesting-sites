@@ -65,6 +65,34 @@ body {
 
 @media screen and (max-width:800px) {
     .spec-container {
-        max-width: 600px !important;
+        max-width: 520px !important;
     }
+}
+
+@media screen and (min-width:1000px) {
+    .hover:hover .hover-img {
+        margin-right: 15px;
+    }
+
+    .hover:hover .hover-text {
+        font-size: 18px;
+    }
+
+    .hover-text {
+        font-size: 0px;
+        transition: all 0.4s;
+    }
+}
+@media screen and (max-width:1000px) {
+    .hover-img {
+        margin-right: 15px;
+    }
+}
+.hover-img {
+    transition: all 0.4s;
+    width: 60px;
+}
+.hover {
+    transition: all 0.4s;
+    display: inline-flex;
 }
